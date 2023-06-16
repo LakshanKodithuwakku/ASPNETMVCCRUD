@@ -1,0 +1,36 @@
+﻿@model ASPNETMVCCRUD.Models.UpdateCompanyViewModel
+
+@{
+}
+
+<h1>Edit Company</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Address</label>
+        <input type="text" class="form-control" asp-for="Address">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Contact Infomation</label>
+        <input type="email" class="form-control" asp-for="ContactInfo">
+    </div> 
+    <div class="mb-3">
+        <label for="" class="form-label">No Of Employees</label>
+        <input type="text" class="form-control" asp-for="NoOfEmployees">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+    <button type="submit" class="btn btn-danger"
+        asp-action="Delete"
+        asp-controller="Companies">Delete</button>
+</form>
+
+
